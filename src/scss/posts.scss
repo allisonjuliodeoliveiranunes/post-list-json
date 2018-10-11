@@ -1,0 +1,81 @@
+.card{
+    max-width: 560px;
+    margin: 20px 0;
+    border-color: transparent transparent #d8d8d8 transparent !important;
+    padding-bottom: 20px;
+    .media{
+      position: relative;
+      figure{
+        width: 215px;
+        height: 144px;
+        margin: 0;
+        overflow: hidden;
+        img {
+          transition: all linear 0.3s;
+          height: 144px;
+          object-fit: cover;
+        }
+      }
+      h5{
+        a{
+        color: $theme-color;
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
+        font-size: 20px;
+        }
+      }
+      span{
+        color: $theme-color;
+        font-weight: 100;
+        font-size: 14px;
+        line-height: 1.3;
+      }
+      .infos{
+        color: $theme-color;
+        position: absolute;
+        bottom: 0;
+        font-size: 10px;
+        a{    
+          width: 10px;
+          height: 10px;
+          background: $theme-color;
+          margin-left: 4px;
+          padding: 2px 4px;
+          text-align: center;
+          border-radius: 1px;
+          display: inline-table;
+          .fa{
+            font-size: 8px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  
+    &:hover{
+      img{
+        -webkit-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
+        transition: all linear 0.3s;
+      }
+    }
+  }
+ 
+  .show-posts{
+    text-align: center;
+    font-size: 40px;
+    border-top: 5px solid #000;
+    border-bottom: 1px solid #1a1a1a;
+    margin: 60px auto;
+    display: table;
+    width: 100%;
+    padding: 12px 0;
+      a{
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Merriweather'
+      }
+  }
+
+  

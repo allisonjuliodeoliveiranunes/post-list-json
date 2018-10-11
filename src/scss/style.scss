@@ -1,0 +1,39 @@
+$theme-color: #666666;
+
+@import 'search.scss';
+@import 'advanced_search.scss';
+@import 'posts.scss';
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  max-width: 675px;
+  width: 100%;
+  margin: 0 auto !important;
+  position: relative;
+}
+.flex{
+  display: flex;
+}
+
+.results{
+  width: 100px;
+  span.divider {
+    content: '';
+    width: 50px;
+    height: 5px;
+    background: black;
+    display: table;
+    position: relative;
+    font-size: 1px;
+    margin-bottom: 14px;
+    margin-top: 22px;
+    }
+  span.data{
+    font-size: 14px;
+    color: $theme-color;
+  }
+}
+
+
